@@ -58,4 +58,11 @@ for word,times in word_counter.items():
         biggestNumber = times
         biggestWord = word
 
-print(word_counter, biggestWord, biggestNumber)
+sorted_dict = dict(sorted(word_counter.items(), key=lambda x: (x[1],x[1]), reverse=True))
+print(sorted_dic, biggestWord, biggestNumber)
+
+# Next steps:
+# Add more data to forbidden words
+# Add some regex so no numbers are allowed
+# Add some visualization 
+# Make it comparable (support to different websites)
